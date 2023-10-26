@@ -1,3 +1,6 @@
+package avaragecomporation;
+
+import avaragecomporation.AverageComporation;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -35,9 +38,6 @@ class AverageComporationTest extends AverageComporation {
     void testCalculateAveragetyList() {
         double result = comp.calculateAverage(list1);
         assertEquals(5.5, result);
-    }
-    @Test
-    void testCompareLists() {
     }
 
     @Test

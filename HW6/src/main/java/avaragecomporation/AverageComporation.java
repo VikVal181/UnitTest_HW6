@@ -1,10 +1,12 @@
+package avaragecomporation;
 
 import java.util.List;
 public class AverageComporation {
     //Метод расчета среднего числа
-    public double calculateAverage(List<Integer> list) {
+    public double calculateAverage(final List<Integer> list) {
         if (list == null || list.isEmpty()) {
-            throw new IllegalArgumentException("Список не может быть пустым или равным null");
+            throw new IllegalArgumentException("Список не может быть "
+                    + "пустым или равным null");
         }
 
         int sum = 0;
@@ -15,7 +17,8 @@ public class AverageComporation {
     }
 
 //     Метод сравнения средних чисел, расчитанных методом calculateAverage
-    public String compareLists(List<Integer> list1, List<Integer> list2) {
+    public String compareLists(final List<Integer> list1,
+                               final List<Integer> list2) {
         double average1 = calculateAverage(list1);
         double average2 = calculateAverage(list2);
 
